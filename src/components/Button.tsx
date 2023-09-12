@@ -5,7 +5,18 @@ interface ButtonProps {
 }
 
 const Button: Component<ButtonProps> = props => (
-  <button class="rounded-full bg-rose-300 py-4 px-6">Call sleeping {props.name}</button>
+  <button
+    class="
+      rounded-full
+      bg-rose-300
+      py-4
+      px-6
+      transition
+      hover:bg-rose-200
+    "
+  >
+    Call sleeping {props.name}
+  </button>
 )
 
 export default Button;
